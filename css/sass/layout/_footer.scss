@@ -1,0 +1,115 @@
+.footer{
+    background-color: #e2e2e2;
+    padding: 30px 0;
+    margin-top: 50px;
+    overflow-x: hidden;
+    .gallery, .info, .contact{
+    float: $float-left;      
+    }
+    .gallery{
+        @media #{$minSmall}{
+            width: 100%;
+        } 
+         @media #{$minMedium}{
+            width: 50%;
+        } 
+        .img-box{overflow: hidden;margin-bottom: 20px;
+         img {
+        @media #{$minSmall}{
+           float: $float-left;  
+        } 
+          width: 150px;
+          height: 150px; }
+        .text{
+        @media #{$minSmall}{
+           float: $float-left; 
+           margin: 0 15px;
+           width: calc(100% - 180px);
+            padding-right: 10px;
+        } 
+         h4{color: $redcolor;margin: 25px 0 0;}
+         p{color: #888;line-height: 1.8;margin-top: 5px;}
+            
+        }     
+            
+        }
+   
+    }
+    .info{
+       @media #{$minSmall}{
+            width: 50%;
+        } 
+         @media #{$minMedium}{
+            width: 25%;
+        }
+          @media #{$maxMobile}{
+            width: 100%;
+        }
+        ul{
+        color:#888;  
+        line-height: 1.8;
+         span{color: $redcolor;}
+        }
+    
+        h4{
+          color:#888;
+            margin-bottom: 0;
+        }
+        p{
+            color:#888;
+            margin-top: 12px;
+        }
+    }
+    .contact{
+        @media #{$minSmall}{
+            width: 100%;
+        } 
+         @media #{$minMedium}{
+            width: 25%;
+        }
+       input[type="text"],
+       input[type="email"],
+       textarea{
+        border: 1px solid #888;
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 10px; 
+        outline: none; 
+        }
+        textarea{
+            height: 145px;
+        }
+    }
+    .section-title{color: #444;font-weight: normal;font-size: 18px;}
+    .copyright{
+        padding: 15px 0;
+        border-top: 1px solid #c5c5c5;
+        overflow: hidden;
+        margin-top: 30px;
+        .text, .author{
+        float: $float-left;
+        @media #{$minSmall}{
+            width: 50%;
+        } 
+         @media #{$minMedium}{
+            width: 50%;
+        }
+          @media #{$maxMobile}{
+            width: 100%;
+            text-align: center !important;
+            line-height: 1.7;
+        }    
+            
+            
+        
+        }   
+      
+        .author{
+            text-align: right;
+        }
+        
+        
+    }
+     
+}

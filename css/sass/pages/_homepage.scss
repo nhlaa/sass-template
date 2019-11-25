@@ -1,0 +1,142 @@
+/*start slider*/
+.slider{
+    blockquote{font-size: 20px;line-height: 1.7;text-align: center;font-weight: bold;font-style: italic;color: #5e5e5e;font-family: tahoma, arial;width: 80%;margin: 30px auto;}   
+    
+    img{
+    max-width: 100%;      
+    }  
+    .bullets{text-align: center;
+        li{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: #d1d1d1;
+            border-radius: 50%;
+            border: 2px solid #d1d1d1;
+            cursor: pointer;
+            &.active, 
+            &:hover
+            {
+                border: 2px solid $redcolor;
+                background-color: $redcolor;
+            }
+        }
+        
+        
+    } 
+    
+}
+/*end slider*/
+/*start service*/
+.service{padding: 20px 0;
+    .service-box{
+        &:not(:last-of-type){
+          padding-right: 20px;
+        }
+        @media #{$minMedium}{
+        float: $float-left;
+        width: (100% / 3);   
+           
+        }
+        @media #{$maxMobile}{
+       
+        i{
+                display: block;
+                margin-bottom: 15px;
+                
+         }
+        }
+        .service-title{
+        i{
+         font-size: 35px;
+         position: relative;
+         top: 4px;
+         margin-right: 10px;
+         }  
+        }   
+       
+        .service-desc{
+        color: #666; 
+        line-height: 1.5;
+        }
+        .link{
+         color: $redcolor;
+        text-decoration: none;
+        } 
+        
+        
+    }     
+}
+
+
+/*end service*/
+
+
+/*start player*/
+.players{padding: 20px 0;
+    .players-box{
+      
+      
+        @media #{$minSmall}{
+         float: $float-left;
+         width: (100% / 2);
+         text-align: center;
+         margin-bottom: 30px;
+            
+        }
+        @media #{$minMedium}{
+        width: (100% / 3); 
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+           
+        }
+        @media #{$minLarge}{
+        width: (100% / 5);
+        margin-bottom: 0;
+           
+        }
+        @media #{$maxMobile}{
+          margin-bottom: 30px;
+        }
+        .players-title{
+        color:#666;
+        font-weight: normal;
+        span{font-weight: bold;}
+        }   
+        .players-desc{
+        color: #666; 
+        line-height: 1.5;
+        }
+        .link{
+         color: $redcolor;
+        text-decoration: none;
+        } 
+       
+        
+    }     
+}
+
+
+/*end players*/
+
+/*start lorem*/
+.lorem-ipsum{padding: 20px 0;
+    .lorem-box{
+        float: $float-left;
+        width: (100% / 3);
+        padding-right: 20px;
+        &:not(:last-of-type){
+             padding-right: 20px;
+        }
+     
+       
+        
+    }     
+}
+
+
+/*end players*/
+
+
+
